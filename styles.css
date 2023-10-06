@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins&family=Roboto&display=swap');
+
+:root {
+  --title-font-family: 'Dela Gothic One', cursive;
+  --heading-font-family: 'Roboto', sans-serif;
+  --paragraph-font-family: 'Poppins', sans-serif;
+  --bg-color: #F3FBFB;
+  --text-color: #1F201A;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--paragraph-font-family);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  padding: 0 6rem 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > .nav {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.header > .nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header > .nav > span::after {
+  content: "";
+  display: block;
+  background-color: var(--text-color);
+  width: 100%;
+  height: 2px;
+  transition: transform 0.3s ease-in;
+  transform: scale(0);
+}
+
+.header > .nav > span:hover::after {
+  transform: scale(1);
+}
+
+.image-bg {
+  background-image: url("./images/car-bg.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.image-bg > h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+section {
+  padding: 35px 6rem 35px 6rem;
+  line-height: 1.8;
+}
+
+section > h2 {
+  text-align: center;
+  font-family: var(--heading-font-family);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 25px;
+}
+
+.card {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-image {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-head {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.card-body{
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card-head {
+  padding: 0;
+}
+
+.product-card-head > img {
+  width: 100%;
+  height: 350px;
+}
+
+.product-card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card-body > h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#contact {
+  background-color: white;
+  color: var(--text-color);
+}
+
+#about {
+  background-color: white;
+}
